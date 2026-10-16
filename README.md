@@ -58,10 +58,24 @@ The RGB LED is driven through the PCF8574 and indicates battery level:
 Charging is not identified separately because the board has no charge-status
 signal connected. The PCF8574 interrupt is connected to **D10**.
 
-## Uploading code
+## Uploading code & audio files
 
-Open `Firmware/Miirin.ino` in the Arduino IDE. Install Espressif's **esp32**
-board package and the **U8g2** and **DFRobot_DF1201S** libraries, then select **XIAO_ESP32S3** as the board. Connect the XIAO, verify the sketch, and upload
-it.
+Upload the code in firmware folder. Make sure to select the XIAO ESP32 S3 board.
 
 Put your audio files on the DFPlayer Pro's storage. At startup, the player checks how many tracks are available and restores the last selected track and volume while the XIAO remains powered.
+
+## Images
+
+### Schematic
+
+<img width="760" height="558" alt="image" src="https://github.com/user-attachments/assets/835f4810-9a1a-4945-b640-ffc196da6095" />
+
+### PCB
+
+<img width="430" height="510" alt="image" src="https://github.com/user-attachments/assets/b269de17-2eaa-43e4-9293-7ae1a2f84094" />
+
+### CAD
+
+<img width="764" height="463" alt="image" src="https://github.com/user-attachments/assets/7e6d2534-1828-4ccb-b33b-a7d2fd628de0" />
+
+
