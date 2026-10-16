@@ -3,19 +3,20 @@ Quantity,Reference,Part,Prices ($),Buy Links
 1,U2,DFRobot DFPlayer Pro (DFR0768),12.47,https://www.aliexpress.com/item/1005009801181233.html
 1,-,1.3 Inch OLED screen,5.97,https://www.aliexpress.com/item/1005012014098105.html
 1,U3,PCF8574P I2C I/O expander,4.56,https://www.aliexpress.com/item/1005010617692092.html (sold in 5pcs)
-1,D1,Common-anode RGB LED,2,https://www.aliexpress.com/item/1005012188300715.html (sold in 10pcs)
-1,Q1,P-channel MOSFET,
+1,D1,Common-anode RGB LED,2.00,https://www.aliexpress.com/item/1005012188300715.html (sold in 10pcs)
+1,Q1,P-channel MOSFET,8.45,https://www.aliexpress.com/item/1005011589388936.html (sold in 5pcs)
 1,SW6,Rotary encoder,0.77,https://www.aliexpress.com/item/1005006127287538.html
 5,SW1-SW5,Momentary push buttons,0.87,https://www.aliexpress.com/item/1005009251091250.html (Sold in 5pcs)
-1,J1,4-pin socket/header for the OLED,
-1,J2,Switched 3.5 mm audio jack,
-3,R4-R6,220 Ω resistors,
-2,R2-R3,4.7 kΩ resistors,
-1,R1,100 kΩ resistor,
-2,C1-C2,10 µF ceramic capacitors,
-1,C4,0.1 µF ceramic capacitor,
-1,C5,470 µF polarized capacitor,
-4,H1-H4,M2 screw,
-1,-,PCB,
-4,-,3D print,
-2,-,100 kΩ resistors,External battery-sense divider between battery positive and negative via D0; not on PCB
+1,J1,4-pin socket/header for the OLED,0.93,https://www.aliexpress.com/item/1005007093958549.html
+1,J2,Switched 3.5 mm audio jack,1.99,https://www.aliexpress.com/item/1005012057262599.html (sold in 10pcs)
+3,R4-R6,220 Ω resistors,1.00,https://www.aliexpress.com/item/1005011886443911.html (Sold in 20pcs)
+2,R2-R3,4.7 kΩ resistors,1.00,https://www.aliexpress.com/item/1005011886443911.html (sold in 20 pcs)
+1,R1,100 kΩ resistor,1.00,https://www.aliexpress.com/item/1005011886443911.html (sold in 20 pcs)
+2,-,100 kΩ resistors,1.00,https://www.aliexpress.com/item/1005011886443911.html (sold in 20 pcs)
+2,C1-C2,10 µF ceramic capacitors,0.77,https://www.aliexpress.com/item/1005004319296106.html (sold in 50pcs)
+1,C4,0.1 µF ceramic capacitor,0.77,https://www.aliexpress.com/item/1005004319296106.html (sold in 50pcs)
+1,C5,470 µF polarized capacitor,2.97,https://www.aliexpress.com/item/1005012167135628.html
+4,H1-H4,M2 screw,-,-
+4,-,M3 screw,-,-
+1,-,PCB,4.00,-
+4,-,3D print,~7.00,-
