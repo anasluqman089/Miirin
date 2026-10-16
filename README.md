@@ -5,15 +5,32 @@ DFPlayer Pro. It has an OLED display, five buttons, a rotary encoder, and an
 RGB status LED. The `CAD`, `PCB`, and `Production` folders contain the
 enclosure, board, and manufacturing files.
 
-## Getting started
+## Bill of materials
 
-Open `Firmware/Miirin.ino` in the Arduino IDE. Install Espressif's **esp32**
-board package and the **U8g2** and **DFRobot_DF1201S** libraries, then select **XIAO_ESP32S3** as the board. Connect the XIAO, verify the sketch, and upload
-it.
+| Qty. | Reference(s) | Part | Est. unit price (USD) | Est. line total (USD) | Buy / search |
+| ---: | --- | --- | ---: | ---: | --- |
+| 1 | U1 | Seeed XIAO ESP32-S3 module | $7.99 | $7.99 | [Seeed](https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html) |
+| 1 | U2 | DFRobot DFPlayer Pro (DFR0768) | $22.00 | $22.00 | [DFRobot search](https://www.dfrobot.com/search?keywords=DFR0768) |
+| 1 | - | 1.3 Inch OLED screen | $8.00 | $8.00 | [Amazon search](https://www.amazon.com/s?k=1.3+inch+OLED+I2C+128x64) |
+| 1 | U3 | PCF8574P I2C I/O expander | $1.50 | $1.50 | [Mouser search](https://www.mouser.com/c/?q=PCF8574P) |
+| 1 | D1 | Common-anode RGB LED | $0.50 | $0.50 | [Mouser search](https://www.mouser.com/c/?q=common%20anode%20RGB%20LED%20through%20hole) |
+| 1 | Q1 | P-channel MOSFET | $0.25 | $0.25 | [Mouser search](https://www.mouser.com/c/?q=P-channel%20MOSFET) |
+| 1 | SW6 | Rotary encoder | $1.50 | $1.50 | [Amazon search](https://www.amazon.com/s?k=rotary+encoder+through+hole) |
+| 5 | SW1-SW5 | Momentary push buttons | $0.15 | $0.75 | [Mouser search](https://www.mouser.com/c/?q=tactile%20switch%20through%20hole) |
+| 1 | J1 | 4-pin socket/header for the OLED | $0.50 | $0.50 | [Amazon search](https://www.amazon.com/s?k=4+pin+2.54mm+header+socket) |
+| 1 | J2 | Switched 3.5 mm audio jack | $1.50 | $1.50 | [Mouser search](https://www.mouser.com/c/?q=switched%203.5mm%20audio%20jack%20through%20hole) |
+| 3 | R4-R6 | 220 Ω resistors | $0.03 | $0.09 | [Mouser search](https://www.mouser.com/c/?q=220%20ohm%20resistor%201%2F4%20W) |
+| 2 | R2-R3 | 4.7 kΩ resistors | $0.03 | $0.06 | [Mouser search](https://www.mouser.com/c/?q=4.7k%20ohm%20resistor%201%2F4%20W) |
+| 1 | R1 | 100 kΩ resistor | $0.03 | $0.03 | [Mouser search](https://www.mouser.com/c/?q=100k%20ohm%20resistor%201%2F4%20W) |
+| 2 | - | 100 kΩ resistors for the external battery-sense divider | $0.03 | $0.06 | [Mouser search](https://www.mouser.com/c/?q=100k%20ohm%20resistor%201%2F4%20W) |
+| 2 | C1-C2 | 10 µF ceramic capacitors | $0.15 | $0.30 | [Mouser search](https://www.mouser.com/c/?q=10uF%20ceramic%20capacitor) |
+| 1 | C4 | 0.1 µF ceramic capacitor | $0.05 | $0.05 | [Mouser search](https://www.mouser.com/c/?q=0.1uF%20ceramic%20capacitor) |
+| 1 | C5 | 470 µF polarized capacitor | $0.25 | $0.25 | [Mouser search](https://www.mouser.com/c/?q=470uF%20electrolytic%20capacitor) |
+| 4 | H1-H4 | M2 screw | $0.10 | $0.40 | [Amazon search](https://www.amazon.com/s?k=M2+screws) |
+| 1 | - | PCB | $5.00 | $5.00 | [PCBWay order](https://www.pcbway.com/orderonline.aspx) |
+| 4 | - | 3D print | $1.50 | $6.00 | [PCBWay 3D printing](https://www.pcbway.com/rapid-prototyping/3d-printing/) |
 
-Put your audio files on the DFPlayer Pro's storage. At startup, the player
-checks how many tracks are available and restores the last selected track and
-volume while the XIAO remains powered.
+**Estimated total** = **$56.73** *Not inluding shipping
 
 ## Controls and display
 
@@ -41,32 +58,10 @@ The RGB LED is driven through the PCF8574 and indicates battery level:
 Charging is not identified separately because the board has no charge-status
 signal connected. The PCF8574 interrupt is connected to **D10**.
 
-## Bill of materials
+## Uploading code
 
-| Qty. | Reference(s) | Part |
-| ---: | --- | --- |
-| 1 | U1 | Seeed XIAO ESP32-S3 module |
-| 1 | U2 | DFRobot DFPlayer Pro (DFR0768) |
-| 1 | - | 1.3 Inch OLED screen|
-| 1 | U3 | PCF8574P I2C I/O expander |
-| 1 | D1 | Common-anode RGB LED |
-| 1 | Q1 | P-channel MOSFET |
-| 1 | SW6 | Rotary encoder |
-| 5 | SW1-SW5 | Momentary push buttons |
-| 1 | J1 | 4-pin socket/header for the OLED |
-| 1 | J2 | Switched 3.5 mm audio jack |
-| 3 | R4-R6 | 220 Ω resistors |
-| 2 | R2-R3 | 4.7 kΩ resistors |
-| 1 | R1 | 100 kΩ resistor |
-| 2 | C1-C2 | 10 µF ceramic capacitors |
-| 1 | C4 | 0.1 µF ceramic capacitor |
-| 1 | C5 | 470 µF polarized capacitor |
-| 4 | H1-H4 | M2 screw |
-| 1 | - | PCB |
-| 4 | - | 3D print |
+Open `Firmware/Miirin.ino` in the Arduino IDE. Install Espressif's **esp32**
+board package and the **U8g2** and **DFRobot_DF1201S** libraries, then select **XIAO_ESP32S3** as the board. Connect the XIAO, verify the sketch, and upload
+it.
 
-The battery-sense divider described above is external to the current PCB
-schematic. It needs two additional 100 kΩ resistors between battery positive,
-D0, and battery negative. They have no PCB reference designators yet and are
-not included in the on-board quantities above. The battery, OLED, and
-headphones are also external to the PCB BOM.
+Put your audio files on the DFPlayer Pro's storage. At startup, the player checks how many tracks are available and restores the last selected track and volume while the XIAO remains powered.
