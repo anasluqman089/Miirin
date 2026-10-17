@@ -64,6 +64,11 @@ Upload the code in firmware folder. Make sure to select the XIAO ESP32 S3 board.
 
 Put your audio files on the DFPlayer Pro's storage. At startup, the player checks how many tracks are available and restores the last selected track and volume while the XIAO remains powered.
 
+## CAD
+
+Here is the link for the CAD
+[Onshape](https://cad.onshape.com/documents/3d8e9b5928a29fef03f51911/w/7d3ee8411c85baeb3f6a489e/e/28521f022b7deb8d589466ae?renderMode=0&uiState=6ad3208a288b1a9cd259184f)
+
 ## Images
 
 ### Schematic
