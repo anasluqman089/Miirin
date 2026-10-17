@@ -7,28 +7,30 @@ enclosure, board, and manufacturing files.
 
 ## Bill of materials
 
-| Qty. | Reference(s) | Part | Est. unit price (USD) | Est. line total (USD) | Buy / search |
-| ---: | --- | --- | ---: | ---: | --- |
-| 1 | U1 | Seeed XIAO ESP32-S3 module | $7.99 | $7.99 | [Seeed](https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html) |
-| 1 | U2 | DFRobot DFPlayer Pro (DFR0768) | $22.00 | $22.00 | [DFRobot search](https://www.dfrobot.com/search?keywords=DFR0768) |
-| 1 | - | 1.3 Inch OLED screen | $8.00 | $8.00 | [Amazon search](https://www.amazon.com/s?k=1.3+inch+OLED+I2C+128x64) |
-| 1 | U3 | PCF8574P I2C I/O expander | $1.50 | $1.50 | [Mouser search](https://www.mouser.com/c/?q=PCF8574P) |
-| 1 | D1 | Common-anode RGB LED | $0.50 | $0.50 | [Mouser search](https://www.mouser.com/c/?q=common%20anode%20RGB%20LED%20through%20hole) |
-| 1 | Q1 | P-channel MOSFET | $0.25 | $0.25 | [Mouser search](https://www.mouser.com/c/?q=P-channel%20MOSFET) |
-| 1 | SW6 | Rotary encoder | $1.50 | $1.50 | [Amazon search](https://www.amazon.com/s?k=rotary+encoder+through+hole) |
-| 5 | SW1-SW5 | Momentary push buttons | $0.15 | $0.75 | [Mouser search](https://www.mouser.com/c/?q=tactile%20switch%20through%20hole) |
-| 1 | J1 | 4-pin socket/header for the OLED | $0.50 | $0.50 | [Amazon search](https://www.amazon.com/s?k=4+pin+2.54mm+header+socket) |
-| 1 | J2 | Switched 3.5 mm audio jack | $1.50 | $1.50 | [Mouser search](https://www.mouser.com/c/?q=switched%203.5mm%20audio%20jack%20through%20hole) |
-| 3 | R4-R6 | 220 Ω resistors | $0.03 | $0.09 | [Mouser search](https://www.mouser.com/c/?q=220%20ohm%20resistor%201%2F4%20W) |
-| 2 | R2-R3 | 4.7 kΩ resistors | $0.03 | $0.06 | [Mouser search](https://www.mouser.com/c/?q=4.7k%20ohm%20resistor%201%2F4%20W) |
-| 1 | R1 | 100 kΩ resistor | $0.03 | $0.03 | [Mouser search](https://www.mouser.com/c/?q=100k%20ohm%20resistor%201%2F4%20W) |
-| 2 | - | 100 kΩ resistors for the external battery-sense divider | $0.03 | $0.06 | [Mouser search](https://www.mouser.com/c/?q=100k%20ohm%20resistor%201%2F4%20W) |
-| 2 | C1-C2 | 10 µF ceramic capacitors | $0.15 | $0.30 | [Mouser search](https://www.mouser.com/c/?q=10uF%20ceramic%20capacitor) |
-| 1 | C4 | 0.1 µF ceramic capacitor | $0.05 | $0.05 | [Mouser search](https://www.mouser.com/c/?q=0.1uF%20ceramic%20capacitor) |
-| 1 | C5 | 470 µF polarized capacitor | $0.25 | $0.25 | [Mouser search](https://www.mouser.com/c/?q=470uF%20electrolytic%20capacitor) |
-| 4 | H1-H4 | M2 screw | $0.10 | $0.40 | [Amazon search](https://www.amazon.com/s?k=M2+screws) |
-| 1 | - | PCB | $5.00 | $5.00 | [PCBWay order](https://www.pcbway.com/orderonline.aspx) |
-| 4 | - | 3D print | $1.50 | $6.00 | [PCBWay 3D printing](https://www.pcbway.com/rapid-prototyping/3d-printing/) |
+
+| Qty. | Reference | Part | Price ($) | Buy links |
+| ---: | --- | --- | ---: | --- |
+| 1 | U1 | Seeed XIAO ESP32-S3 module | $21.11 | [AliExpress](https://www.aliexpress.com/item/1005010765493617.html) |
+| 1 | U2 | DFRobot DFPlayer Pro (DFR0768) | $12.47 | [AliExpress](https://www.aliexpress.com/item/1005009801181233.html) |
+| 1 | - | 1.3 Inch OLED screen | $5.97 | [AliExpress](https://www.aliexpress.com/item/1005012014098105.html) |
+| 1 | U3 | PCF8574P I2C I/O expander | $4.56 | [AliExpress](https://www.aliexpress.com/item/1005010617692092.html) (sold in 5pcs) |
+| 1 | D1 | Common-anode RGB LED | $2.00 | [AliExpress](https://www.aliexpress.com/item/1005012188300715.html) (sold in 10pcs) |
+| 1 | Q1 | P-channel MOSFET | $8.45 | [AliExpress](https://www.aliexpress.com/item/1005011589388936.html) (sold in 5pcs) |
+| 1 | SW6 | Rotary encoder | $0.77 | [AliExpress](https://www.aliexpress.com/item/1005006127287538.html) |
+| 5 | SW1-SW5 | Momentary push buttons | $0.87 | [AliExpress](https://www.aliexpress.com/item/1005009251091250.html) (sold in 5pcs) |
+| 1 | J1 | 4-pin socket/header for the OLED | $0.93 | [AliExpress](https://www.aliexpress.com/item/1005007093958549.html) |
+| 1 | J2 | Switched 3.5 mm audio jack | $1.99 | [AliExpress](https://www.aliexpress.com/item/1005012057262599.html) (sold in 10pcs) |
+| 3 | R4-R6 | 220 Ω resistors | $1.00 | [AliExpress](https://www.aliexpress.com/item/1005011886443911.html) (sold in 20pcs) |
+| 2 | R2-R3 | 4.7 kΩ resistors | $1.00 | [AliExpress](https://www.aliexpress.com/item/1005011886443911.html) (sold in 20 pcs) |
+| 1 | R1 | 100 kΩ resistor | $1.00 | [AliExpress](https://www.aliexpress.com/item/1005011886443911.html) (sold in 20 pcs) |
+| 2 | - | 100 kΩ resistors | $1.00 | [AliExpress](https://www.aliexpress.com/item/1005011886443911.html) (sold in 20 pcs) |
+| 2 | C1-C2 | 10 µF ceramic capacitors | $0.77 | [AliExpress](https://www.aliexpress.com/item/1005004319296106.html) (sold in 50pcs) |
+| 1 | C4 | 0.1 µF ceramic capacitor | $0.77 | [AliExpress](https://www.aliexpress.com/item/1005004319296106.html) (sold in 50pcs) |
+| 1 | C5 | 470 µF polarized capacitor | $2.97 | [AliExpress](https://www.aliexpress.com/item/1005012167135628.html) |
+| 4 | H1-H4 | M2 screw | - | - |
+| 4 | - | M3 screw | - | - |
+| 1 | - | PCB | $4.00 | - |
+| 4 | - | 3D print | ~$7.00 | - |
 
 **Estimated total** = **$56.73** *Not inluding shipping
 
