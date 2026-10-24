@@ -1880,7 +1880,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:RotaryEncoder"
+		(symbol "Device:RotaryEncoder_Switch"
 			(pin_names
 				(offset 0.254)
 				(hide yes)
@@ -1900,7 +1900,7 @@
 					)
 				)
 			)
-			(property "Value" "RotaryEncoder"
+			(property "Value" "RotaryEncoder_Switch"
 				(at 0 -6.604 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1932,7 +1932,7 @@
 					)
 				)
 			)
-			(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs"
+			(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1943,7 +1943,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "rotary switch encoder"
+			(property "ki_keywords" "rotary switch encoder switch push button"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1954,7 +1954,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "RotaryEncoder*"
+			(property "ki_fp_filters" "RotaryEncoder*Switch*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1965,7 +1965,7 @@
 					)
 				)
 			)
-			(symbol "RotaryEncoder_0_1"
+			(symbol "RotaryEncoder_Switch_0_1"
 				(rectangle
 					(start -5.08 5.08)
 					(end 5.08 -5.08)
@@ -2119,8 +2119,78 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 3.81 1.016) (xy 3.81 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 0) (xy 3.429 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 4.318 1.016)
+					(radius 0.127)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 4.318 -1.016)
+					(radius 0.127)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 4.318 2.54) (xy 4.318 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -2.54) (xy 4.318 -2.54) (xy 4.318 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
-			(symbol "RotaryEncoder_1_1"
+			(symbol "RotaryEncoder_Switch_1_1"
 				(pin passive line
 					(at -7.62 2.54 0)
 					(length 2.54)
@@ -2168,6 +2238,42 @@
 						)
 					)
 					(number "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "S1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "S1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "S2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "S2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3983,10 +4089,6 @@
 		(uuid "43324a14-9220-42d2-9496-7cac409912b3")
 	)
 	(no_connect
-		(at 101.6 72.39)
-		(uuid "52badf0e-078d-4d6e-aa4e-7d5e4f1d9143")
-	)
-	(no_connect
 		(at 81.28 40.64)
 		(uuid "595bfdc8-32b6-4425-ad29-35b5d9a1736f")
 	)
@@ -4475,12 +4577,12 @@
 		(uuid "23168708-9d36-4608-81e0-75de5359d231")
 	)
 	(label "RoEn B"
-		(at 154.94 53.34 180)
+		(at 171.45 69.85 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "24e402a1-dbf0-45d3-96f8-5831c0a2f681")
 	)
@@ -4504,6 +4606,16 @@
 		)
 		(uuid "29be5771-e0a3-4385-a820-52d62b0d2aa8")
 	)
+	(label "RoEn S1"
+		(at 101.6 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2eaf0b32-9e5b-438e-a869-629427ffa9fa")
+	)
 	(label "DFP Vin"
 		(at 138.43 95.25 180)
 		(effects
@@ -4525,12 +4637,12 @@
 		(uuid "434bb77b-1673-41b2-bf9b-038ce88112e8")
 	)
 	(label "RoEn C"
-		(at 154.94 50.8 180)
+		(at 171.45 74.93 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "4378006d-1556-4467-8dd9-0b8caf77521a")
 	)
@@ -4744,6 +4856,16 @@
 		)
 		(uuid "cba5575e-7683-439c-b52a-10e22c3e7be7")
 	)
+	(label "RoEn S1"
+		(at 156.21 74.93 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e0e7a0ab-72e0-4df3-87f7-de934d98604c")
+	)
 	(label "SCL"
 		(at 48.26 125.73 0)
 		(effects
@@ -4783,82 +4905,6 @@
 			(justify right bottom)
 		)
 		(uuid "f94a0370-04e5-4d62-ad2d-4a9efe99f934")
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 26.67 49.53 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "031af288-e6e8-48f7-a7de-3574e43c25cc")
-		(property "Reference" "H4"
-			(at 29.21 48.2599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 29.21 50.7999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
-			(at 26.67 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 26.67 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 26.67 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "Miirin"
-				(path "/ee3c5709-4871-4257-bad5-ce6d991bebad"
-					(reference "H4")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -5252,6 +5298,95 @@
 			(project "Miirin"
 				(path "/ee3c5709-4871-4257-bad5-ce6d991bebad"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:RotaryEncoder_Switch")
+		(at 163.83 72.39 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2994a5f6-5c68-4a77-af37-8a54d9dc8ebe")
+		(property "Reference" "SW6"
+			(at 163.83 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RotaryEncoder_Switch"
+			(at 163.83 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm"
+			(at 167.64 76.454 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 78.994 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch"
+			(at 163.83 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "A"
+			(uuid "b662199b-322f-4434-a2f5-d9ca242a6341")
+		)
+		(pin "S1"
+			(uuid "c0ebd687-6291-40b0-ad73-c5522bd5bf8b")
+		)
+		(pin "B"
+			(uuid "f2617a28-c758-4ff5-a1b6-893ef19c5404")
+		)
+		(pin "C"
+			(uuid "acd481a7-ab97-4050-b02a-5cc26240502c")
+		)
+		(pin "S2"
+			(uuid "5df6d596-58a5-47b9-9b0f-a85f4949bc1d")
+		)
+		(instances
+			(project "Miirin"
+				(path "/ee3c5709-4871-4257-bad5-ce6d991bebad"
+					(reference "SW6")
 					(unit 1)
 				)
 			)
@@ -6040,7 +6175,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 121.92 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -6252,7 +6387,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 154.94 48.26 270)
+		(at 171.45 72.39 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6263,7 +6398,7 @@
 		(fields_autoplaced yes)
 		(uuid "6281a5c9-afb0-4a88-9030-6c15ff631cef")
 		(property "Reference" "#PWR014"
-			(at 148.59 48.26 0)
+			(at 177.8 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6274,7 +6409,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 151.13 48.2599 90)
+			(at 175.26 72.3901 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6285,7 +6420,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 154.94 48.26 0)
+			(at 171.45 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6296,7 +6431,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 154.94 48.26 0)
+			(at 171.45 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6307,7 +6442,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 154.94 48.26 0)
+			(at 171.45 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6534,7 +6669,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 121.92 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -6769,7 +6904,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 121.92 24.13 0)
 			(hide yes)
 			(show_name no)
@@ -7294,91 +7429,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:RotaryEncoder")
-		(at 162.56 50.8 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "adc9c48b-e607-48a4-ad05-47656e66c4ca")
-		(property "Reference" "SW6"
-			(at 168.91 49.5299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "RotaryEncoder"
-			(at 168.91 52.0699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm"
-			(at 158.75 46.736 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 162.56 44.196 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs"
-			(at 162.56 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "A"
-			(uuid "5b779f71-63c8-4b2e-83a2-ee06dcbd817c")
-		)
-		(pin "C"
-			(uuid "5d4814ed-97d2-42d0-9739-1293f6703d1b")
-		)
-		(pin "B"
-			(uuid "0a5f436b-df75-4df1-865e-eee27e638f56")
-		)
-		(instances
-			(project "Miirin"
-				(path "/ee3c5709-4871-4257-bad5-ce6d991bebad"
-					(reference "SW6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED_RGBA")
 		(at 74.93 135.89 0)
 		(unit 1)
@@ -7465,6 +7515,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 156.21 69.85 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b297e527-d471-41c1-b863-17269886f1fe")
+		(property "Reference" "#PWR019"
+			(at 149.86 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 152.4 69.8499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 156.21 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3f8b93bb-1f7c-4e5c-99d9-57faa0435cad")
+		)
+		(instances
+			(project "Miirin"
+				(path "/ee3c5709-4871-4257-bad5-ce6d991bebad"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 121.92 64.77 0)
 		(unit 1)
@@ -7496,7 +7625,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
 			(at 121.92 59.69 0)
 			(hide yes)
 			(show_name no)
