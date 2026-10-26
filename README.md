@@ -7,11 +7,6 @@ enclosure, board, and manufacturing files.
 
 ## Bill of materials
 
-
-# Bill of Materials
-
-# Bill of Materials
-
 | Quantity | Reference | Part | Prices ($) | Buy Links |
 | :---: | :---: | :--- | :---: | :--- |
 | 1 | U1 | Seeed XIAO ESP32-S3 module | 7.50 | [AliExpress](https://www.aliexpress.com/w/wholesale-Seeed-XIAO-ESP32-S3-module.html) |
@@ -33,7 +28,7 @@ enclosure, board, and manufacturing files.
 | 1 | C4 | 0.1 uF ceramic capacitor | 0.10 | [AliExpress](https://www.aliexpress.com/w/wholesale-0.1-uF-ceramic-capacitor.html) |
 | 1 | C5 | 470 uF polarized capacitor | 0.45 | [AliExpress](https://www.aliexpress.com/w/wholesale-470-uF-polarized-capacitor.html) |
 | 3 | H1-H3 | M2 screw | 0.30 | [AliExpress](https://www.aliexpress.com/w/wholesale-M2-screw.html) |
-| 5 | - | M3 screw | 0.50 | [AliExpress](https://www.aliexpress.com/w/wholesale-M3-screw.html) |
+| 5 | - | M2.5 screw | 0.50 | [AliExpress](https://www.aliexpress.com/w/wholesale-M2.5-screw.html) |
 | 1 | - | PCB | 8.60 | - |
 | 4 | - | 3D print | ~10.00 | - |
 | **Total** | | | **$45.85** Not inluding shipping | |
